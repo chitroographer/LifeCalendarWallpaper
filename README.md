@@ -7,7 +7,7 @@
 ## ✨ Features
 
 - **Year Calendar** — Every day of the year visualized as a dot. White = past, Orange = today, Grey = future
-- **Life Calendar** — Your entire life mapped in weeks based on your date of birth and expected lifespan
+- **Life Calendar** — Your entire life mapped in weeks based on your date of birth and expected lifespan( Future Scope, its not working as of now )
 - **Auto Refresh** — Wallpaper regenerates automatically at midnight every night using WorkManager
 - **Live Stats** — Shows days elapsed, % of year complete, and days remaining
 - **DOB Form** — Enter your date of birth and the app calculates your life in weeks (default lifespan set to 72 years — avg Indian lifespan)
