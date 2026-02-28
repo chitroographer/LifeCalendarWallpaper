@@ -167,7 +167,7 @@ Distributed under the MIT License. See `LICENSE` for more information.
 **Chitroographer**
 
 - GitHub: [@chitroographer](https://github.com/chitroographer)
-- LinkedIn: [Your LinkedIn](https://linkedin.com/in/yourprofile)
+- LinkedIn: [@Rounak Mahato]([https://www.linkedin.com/in/rounak-mahato-6492121b8/?isSelfProfile=true])
 
 ---
 
