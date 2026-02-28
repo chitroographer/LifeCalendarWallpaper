@@ -1,0 +1,270 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#080808">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="24dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_marginBottom="32dp">
+            <TextView
+                android:id="@+id/btnBack"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="←"
+                android:textColor="#FF6B00"
+                android:textSize="18sp"
+                android:layout_marginEnd="12dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Life Calendar"
+                android:textColor="#FFFFFF"
+                android:textSize="22sp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@drawable/card_background"
+            android:padding="20dp"
+            android:layout_marginBottom="16dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="YOUR DETAILS"
+                android:textColor="#444444"
+                android:textSize="10sp"
+                android:letterSpacing="0.15"
+                android:layout_marginBottom="16dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Date of Birth"
+                android:textColor="#888888"
+                android:textSize="12sp"
+                android:layout_marginBottom="6dp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginBottom="16dp">
+
+                <EditText
+                    android:id="@+id/etDay"
+                    android:layout_width="0dp"
+                    android:layout_height="48dp"
+                    android:layout_weight="1"
+                    android:hint="DD"
+                    android:textColorHint="#333333"
+                    android:textColor="#FFFFFF"
+                    android:textSize="16sp"
+                    android:inputType="number"
+                    android:maxLength="2"
+                    android:background="@drawable/input_background"
+                    android:gravity="center"
+                    android:layout_marginEnd="8dp"/>
+
+                <EditText
+                    android:id="@+id/etMonth"
+                    android:layout_width="0dp"
+                    android:layout_height="48dp"
+                    android:layout_weight="1"
+                    android:hint="MM"
+                    android:textColorHint="#333333"
+                    android:textColor="#FFFFFF"
+                    android:textSize="16sp"
+                    android:inputType="number"
+                    android:maxLength="2"
+                    android:background="@drawable/input_background"
+                    android:gravity="center"
+                    android:layout_marginEnd="8dp"/>
+
+                <EditText
+                    android:id="@+id/etYear"
+                    android:layout_width="0dp"
+                    android:layout_height="48dp"
+                    android:layout_weight="2"
+                    android:hint="YYYY"
+                    android:textColorHint="#333333"
+                    android:textColor="#FFFFFF"
+                    android:textSize="16sp"
+                    android:inputType="number"
+                    android:maxLength="4"
+                    android:background="@drawable/input_background"
+                    android:gravity="center"/>
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Expected Lifespan"
+                android:textColor="#888888"
+                android:textSize="12sp"
+                android:layout_marginBottom="6dp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical">
+
+                <EditText
+                    android:id="@+id/etLifespan"
+                    android:layout_width="80dp"
+                    android:layout_height="48dp"
+                    android:text="72"
+                    android:textColor="#FFFFFF"
+                    android:textSize="16sp"
+                    android:inputType="number"
+                    android:maxLength="3"
+                    android:background="@drawable/input_background"
+                    android:gravity="center"
+                    android:layout_marginEnd="12dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="years  ·  Avg Indian lifespan"
+                    android:textColor="#444444"
+                    android:textSize="12sp"/>
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/statsCard"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="@drawable/card_background"
+            android:padding="20dp"
+            android:layout_marginBottom="16dp"
+            android:visibility="gone">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:layout_marginEnd="8dp">
+                <TextView
+                    android:id="@+id/tvWeeksLived"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#FFFFFF"
+                    android:textSize="26sp"
+                    android:textStyle="bold"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="weeks lived"
+                    android:textColor="#555555"
+                    android:textSize="11sp"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:layout_marginEnd="8dp">
+                <TextView
+                    android:id="@+id/tvWeeksLeft"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#FF6B00"
+                    android:textSize="26sp"
+                    android:textStyle="bold"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="weeks left"
+                    android:textColor="#555555"
+                    android:textSize="11sp"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+                <TextView
+                    android:id="@+id/tvLifePercent"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#FFFFFF"
+                    android:textSize="26sp"
+                    android:textStyle="bold"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="% lived"
+                    android:textColor="#555555"
+                    android:textSize="11sp"/>
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/previewCard"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@drawable/card_background"
+            android:padding="20dp"
+            android:gravity="center"
+            android:layout_marginBottom="16dp"
+            android:visibility="gone">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="WALLPAPER PREVIEW"
+                android:textColor="#444444"
+                android:textSize="10sp"
+                android:letterSpacing="0.15"
+                android:layout_marginBottom="16dp"/>
+
+            <ImageView
+                android:id="@+id/ivPreview"
+                android:layout_width="150dp"
+                android:layout_height="280dp"
+                android:scaleType="fitCenter"/>
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btnGenerate"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:text="Generate My Life Calendar"
+            android:textColor="#FFFFFF"
+            android:textSize="15sp"
+            android:backgroundTint="#1A1A1A"
+            android:layout_marginBottom="12dp"/>
+
+        <Button
+            android:id="@+id/btnSetWallpaper"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:text="Set as Wallpaper →"
+            android:textColor="#FFFFFF"
+            android:textSize="15sp"
+            android:backgroundTint="#FF6B00"
+            android:visibility="gone"/>
+
+    </LinearLayout>
+</ScrollView>
