@@ -15,16 +15,6 @@
 
 ---
 
-## 📱 Screenshots
-
-
-
-| Home Screen | Year Calendar | Life Calendar |
-|---|---|---|
-| ![Home](screenshots/home.png) | ![Year](screenshots/year.png) | ![Life](screenshots/life.png) |
-
----
-
 ## 🛠️ Tech Stack
 
 | Technology | Purpose |
@@ -49,8 +39,8 @@
 
 ### Life Calendar
 1. User enters their date of birth and expected lifespan (default 72 years)
-2. App calculates total weeks lived vs total weeks in lifespan
-3. Draws a 52-column dot grid (1 row = 1 year, 1 dot = 1 week)
+2. App calculates total years lived vs total years in lifespan
+3. Draws a 10-column dot grid (1 row = 10 year, 1 dot = 1 year)
 4. Colors dots — white for lived weeks, orange for current week, dark grey for future
 5. Saves to SharedPreferences so midnight refresh works automatically
 
