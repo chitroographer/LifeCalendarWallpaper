@@ -17,7 +17,7 @@
 
 ## 📱 Screenshots
 
-> Add your screenshots here after taking them from your device
+
 
 | Home Screen | Year Calendar | Life Calendar |
 |---|---|---|
